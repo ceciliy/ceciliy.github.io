@@ -3,53 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tester Homepage</title>
+    <title>Tralalero Tralala | Official Site</title>
     <style>
+        :root {
+            --primary-color: #ff4757; /* A vibrant red/pink for energy */
+            --secondary-color: #2f3542;
+            --bg-color: #f1f2f6;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--secondary-color);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
+
         .container {
             background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             text-align: center;
-            max-width: 400px;
+            max-width: 500px;
+            width: 90%;
         }
+
         h1 {
-            color: #2c3e50;
+            margin-top: 0;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-        p {
-            color: #666;
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: #57606f;
         }
-        .status-badge {
+
+        .cta-button {
             display: inline-block;
-            background: #e7f3ff;
-            color: #007bff;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
             font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .cta-button:hover {
+            background: #ff6b81;
+            transform: translateY(-2px);
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #a4b0be;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Homepage Tester</h1>
-        <div class="status-badge">System Live</div>
-        <p>If you can see six seven six seven, your HTML file is loading correctly.</p>
-        <hr>
-        <p><small>Time to start building!</small></p>
+        <h1>Tralalero Tralala</h1>
+        <p class="tagline">Experience the magic of the extraordinary.</p>
+        
+        <p>Discover why everyone is talking about Tralalero Tralala. Quality, passion, and a touch of whimsy in everything we do.</p>
+        
+        <a href="#" class="cta-button">Get Started Now</a>
+
+        <div class="footer-note">
+            &copy; 2026 Tralalero Tralala Business Inc.
+        </div>
     </div>
 
 </body>
